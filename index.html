@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dairy Business</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=10">
-        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="index.css">
+        <title>Dairy Business</title>
     </head>
     <body>
-        <div id="body-cont">
+        <div class="body-cont">
             <h1>A simple Dairy management system.</h1>
             <form>
                 <label>Days List</label> <br/>
                 <select id ="week_days">
-                    <br>
-                    <option value="a">Monaday</option>
-                    <option value="b">Tuesday</option>
-                    <option value="c">Wednesday</option>
-                    <option value="d">Thursday</option>
-                    <option value="e">Friday</option>
-                    <option value="f">Saturday</option>
-                    <option value="g">Sunday</option>
+                    <option disabled selected value = "0">choose</option>
+                    <option value="1">Monaday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                    <option value="7">Sunday</option>
                 </select>
             </form>
             <form>
-                <label>Shed A</label>
-                <input id="milk_a" type="number">
+                <label>Shed A</label><br>
+                <input id="milk-a" type="number">
             </form>
             <form>
-                <label>Shed B</label>
-                <input id="milk_b" type="number">
+                <label>Shed B</label><br>
+                <input id="milk-b" type="number">
             </form>
             <form>
-                <label>Shed C</label>
-                <input id="milk_c" type="number">
+                <label>Shed C</label><br>
+                <input id="milk-c" type="number">
             </form>
             <form>
-                <label>Shed D</label>
-                <input id="milk_d" type="number">
+                <label>Shed D</label><br>
+                <input id="milk-d" type="number">
             </form>
-            <div id="income_daily">
-                <h3 id="total">ksh </h3>
-                <button onclick="submit()">Total Daily Income</button>
+            <div class="income_daily">
+                <button onclick="calculate()">Daily production</button>
+                <h2 id="totalD">Total Daily Milk production is</h2>
             </div>
-            <div id="income_weekly">
-                <button onclick="submit">Total weekly Income</button>
-            </div>
-        </div>
+        <script src="script.js"></script>
     </body>
 </html>

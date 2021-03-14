@@ -1,15 +1,14 @@
-function submit() {
-    var shedA = document.getElementById("milk_a").Value;
-    var shedB = document.getElementById("milk_b").Value;
-    var shedC = document.getElementById("milk_c").value;
-    var shedD = document.getElementById("milk_c").value;
-    var year = 12;
-    var monthsD = 30;
-    var weekD = 7;
+function calculate() {
+    var shedA = document.getElementById("milk-a").value;
+    var shedB = document.getElementById("milk-b").value;
+    var shedC = document.getElementById("milk-c").value;
+    var shedD = document.getElementById("milk-d").value;
+
     var price = 45;
+    var days = 7;
+    var monthD = 30;
+    var yearly = 12;
 
-
-
-
-    
+    var results = ((shedA * price) + (shedB * price) + (shedC * price) + (shedD));
+    document.getElementById("totalD").innerHTML = "Total Daily Milk production is " + results;
 }
