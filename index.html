@@ -62,13 +62,35 @@
             <br>
             <br>
             <div class="total-weekly-income">
-                <button onclick="calculate()">Total income per week is Ksh</button>
-                <h2 id="weeklyincome"></h2>
+                <button onclick="calculate()">weekly income</button>
+                <h2 id="weeklyincome"> Total Weekly income is Ksh. </h2>
+            </div>
             </div>
             <br>
             <br>
+            <h1 id="weekly-report">Weekly Report</h1>
+            <form>
+            <label>Week 1</label><br><br>
+            <input id="week_1" type="number">
+           </form>
+           <form>
+            <label>Week 2</label><br><br>
+            <input id="week_2" type="number">
+           </form>
+           <form>
+            <label>Week 3</label><br><br>
+            <input id="week_3" type="number">
+           </form>
+           <form>
+            <label>Week 4</label><br><br>
+            <input id="week_4" type="number">
+           </form>
+            
+            <br>
+            <br>
             <div class="total-monthly-income">
-                <button onclick="calculate()">Total income per month is</button>
+                <button onclick="weeklyincome()">Total income per month is</button>
+                <h2 id="monthlyincome">Total monthly income as per week is Ksh. </h2>
             </div>
         <script src="script.js"></script>
     </body>
