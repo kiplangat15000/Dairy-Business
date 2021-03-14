@@ -29,7 +29,11 @@ function weeklyincome() {
     var price = 45;
     var days = 7;
     var con = 1;
+    var weeks = 4;
 
     var resultsw = ((weekone * con) + (weektwo * con) + (weekthree * con) + (weekfour * con));
-    document.getElementById("monthlyincome").innerHTML = "Total monthly income as per week is Ksh. " + resultsw;
+    document.getElementById("monthlypro").innerHTML = "Total monthly milk production as per week is " + resultsw +" litres";
+
+    var resultsIM = (((weekone * weeks) + (weektwo * weeks) + (weekthree * weeks) + (weekfour * weeks))*price);
+    document.getElementById("monthlyincome").innerHTML = "Total monthly income is ksh." + resultsIM;
 }
