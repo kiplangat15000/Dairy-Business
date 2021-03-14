@@ -23,25 +23,52 @@
                     <option value="7">Sunday</option>
                 </select>
             </form>
+            <br>
+            <br>
             <form>
                 <label>Shed A</label><br>
                 <input id="milk-a" type="number">
             </form>
+            <br>
+            <br>
             <form>
                 <label>Shed B</label><br>
                 <input id="milk-b" type="number">
             </form>
+            <br>
+            <br>
             <form>
                 <label>Shed C</label><br>
                 <input id="milk-c" type="number">
             </form>
+            <br>
+            <br>
             <form>
                 <label>Shed D</label><br>
                 <input id="milk-d" type="number">
             </form>
+            <br>
+            <br>
             <div class="income_daily">
                 <button onclick="calculate()">Daily production</button>
                 <h2 id="totalD">Total Daily Milk production is</h2>
+            </div>
+            <br>
+            <br>
+            <div class="total-daily-income">
+                <button onclick="calculate()">Income Daily</button>
+                <h2 id="dailyincome">Total income per day is</h2>
+            </div>
+            <br>
+            <br>
+            <div class="total-weekly-income">
+                <button onclick="calculate()">Total income per week is</button>
+                <h2 id="weeklyincome"></h2>
+            </div>
+            <br>
+            <br>
+            <div class="total-monthly-income">
+                <button onclick="calculate()">Total income per month is</button>
             </div>
         <script src="script.js"></script>
     </body>
