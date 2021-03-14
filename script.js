@@ -16,4 +16,20 @@ function calculate() {
 
     var resultsI = ((shedA * price) + (shedB * price) + (shedC * price) + (shedD * price));
     document.getElementById("dailyincome").innerHTML = "Total daily income milk production is Ksh." + resultsI;
+
+    var resultM = (((shedA * price) + (shedB * price) + (shedC * price) + (shedD * price))*days);
+    document.getElementById("weeklyincome").innerHTML = "Total income per week is Ksh " + resultM;
+}
+function weeklyincome() {
+    var weekone = document.getElementById("week_1").value;
+    var weektwo = document.getElementById("week_2").value;
+    var weekthree = document.getElementById("week_3").value;
+    var weekfour = document.getElementById("week_4").value;
+
+    var price = 45;
+    var days = 7;
+    var con = 1;
+
+    var resultsw = ((weekone * con) + (weektwo * con) + (weekthree * con) + (weekfour * con));
+    document.getElementById("monthlyincome").innerHTML = "Total monthly income as per week is Ksh. " + resultsw;
 }
